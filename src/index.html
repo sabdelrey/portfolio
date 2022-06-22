@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/soleil.png">
+    <title>Sabrina Sylvestre</title>
+    <link rel="stylesheet" href="assets/styles/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <a href="#a_propos" id="skip_menu">Aller directement au contenu principal</a>
+        <div class="header_top">
+            <nav class="reseaux_sociaux" aria-label="Réseaux sociaux">
+                <ul>
+                    <li>
+                        <a href="https://github.com/sabdelrey" target="_blank" aria-label="Lien vers le profil GitHub - Cet hyperlien s'ouvrira dans un nouvel onglet">
+                            <img src="assets/img/github.svg" alt="Logo GitHub" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/sabrina-sylvestre-23163652/" target="_blank" aria-label="Lien vers le profil LinkedIn - Cet hyperlien s'ouvrira dans un nouvel onglet">
+                            <img src="assets/img/linkedin.svg" alt="Logo LinkedIn" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://codepen.io/sabdelrey" target="_blank" aria-label="Lien vers le profil CodePen - Cet hyperlien s'ouvrira dans un nouvel onglet">
+                            <img src="assets/img/codepen.svg" alt="Logo CodePen" aria-hidden="true">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <button id="bouton_mobile" type="button" aria-label="Ouvrir le menu"><img src="assets/img/menu_mobile.svg" alt="Ouvrir le menu" aria-hidden="true"></button>
+                <nav class="nav_principale" aria-label="Navigation principale">
+                    <button type="button" id="close_menu_button" aria-label="Fermer le menu"><i class="fas fa-times fa-3x" aria-hidden="true"></i></button>
+                    <ul>
+                        <li><a href="#a_propos_wrapper">À propos</a></li>
+                        <li><a href="#projets_wrapper">Projets</a></li>
+                        <li><a href="#competences_wrapper">Compétences</a></li>
+                        <li><a href="#contact_wrapper">Contact</a></li>
+                    </ul>
+                    <div class="ligne_blanche_nav"></div>
+                </nav>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header_titles">
+                <h1>Sabrina Sylvestre</h1>
+                <h2>Développeuse front&#8209;end</h2>
+            </div>
+            <div class="post_it">
+                <img src="assets/img/flower_post-it.png" alt="Post-it avec un dessin de fleur">
+                <img src="assets/img/tic-tac-toe_post-it.png" alt="Post-it avec un dessin de tic-tac-toe">
+                <img src="assets/img/heart_post-it.png" alt="Post-it avec un dessin de coeur">
+            </div>
+        </div>
+        <div id="fleche">
+            <svg width="100" height="105" viewBox="0 0 100 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="fleches">
+                    <g id="vert">
+                        <g id="gradient">
+                            <path id="Vector" d="M27.804 27.118L22.8628 32.0872L50.5003 59.6968L78.1378 32.0593L73.1965 27.118L50.5003 49.8143L27.804 27.118V27.118Z" fill="#BEE3DB" fill-opacity="0.6"/>
+                        </g>
+                        <g id="plein">
+                            <path id="Vector_2" d="M27.804 36.118L22.8628 41.0872L50.5003 68.6968L78.1378 41.0593L73.1965 36.118L50.5003 58.8143L27.804 36.118V36.118Z" fill="#D3F3EF"/>
+                        </g>
+                    </g>
+                    <g id="mauve">
+                        <g id="gradient_2">
+                            <path id="Vector_3" d="M27.804 18.118L22.8628 23.0872L50.5003 50.6968L78.1378 23.0593L73.1965 18.118L50.5003 40.8143L27.804 18.118V18.118Z" fill="#DEC9E9" fill-opacity="0.6"/>
+                        </g>
+                        <g id="plein_2">
+                            <path id="Vector_4" d="M27.804 27.118L22.8628 32.0872L50.5003 59.6968L78.1378 32.0593L73.1965 27.118L50.5003 49.8143L27.804 27.118V27.118Z" fill="#E6D2F0"/>
+                        </g>
+                    </g>
+                    <g id="blanc">
+                        <g id="plein_3">
+                            <path id="Vector_5" d="M27.804 18.118L22.8628 23.0872L50.5003 50.6968L78.1378 23.0593L73.1965 18.118L50.5003 40.8143L27.804 18.118V18.118Z" fill="white"/>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section id="a_propos_wrapper">
+            <h3 class="visually-hidden">À propos</h3>
+            <nav class="nav_secondaire_a_propos" aria-label="Navigation secondaire">
+                <ul>
+                    <li><a href="javascript:;" class="lien-actif">À propos</a></li>
+                    <li class="invisible"><a href="#projets_wrapper">Projets</a></li>
+                    <li class="invisible"><a href="#competences_wrapper">Compétences</a></li>
+                    <li class="invisible"><a href="#contact_wrapper">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="a_propos" class="card">
+                <img src="assets/img/avatar.png" alt="Avatar d'une fille aux cheveux bruns frisés avec des lunettes" id="avatar">
+                <p>Coucou! Je m’appelle Sabrina et je suis développeuse front-end. Je viens de terminer un AEC en Production en médias interactifs où j'ai découvert la programmation, ainsi que le design UI/UX. J'aime créer des sites web attrayants, responsives et accessibles.</p>
+                <a href="assets/docs/cv_sylvestre.pdf" class="bouton" download="CV_Sabrina Sylvestre" target="_blank">Voir mon CV<span class="visually-hidden">&nbsp;-&nbsp;Cet hyperlien va télécharger un document.</span></a>
+            </div>
+        </section>
+        <section id="projets_wrapper">
+            <h3 class="visually-hidden">Projets</h3>
+            <nav class="nav_secondaire_projets">
+                <ul>
+                    <li class="invisible"><a href="#a_propos_wrapper">À propos</a></li>
+                    <li><a href="javascript:;" class="lien-actif">Projets</a></li>
+                    <li class="invisible"><a href="#competences_wrapper">Compétences</a></li>
+                    <li class="invisible"><a href="#contact_wrapper">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="projets" class="card">
+                <section>
+                    <h4>BTS animé</h4>
+                    <div class="img_box">
+                        <img src="assets/img/bts_1.png" alt="Capture d'écran du site BTS" id="bts_1" aria-hidden="true">
+                        <img src="assets/img/bts_2.png" alt="Capture d'écran du site BTS" aria-hidden="true">
+                    </div>
+                    <p class="description_projet">Microsite responsive d’une page comportant des animations au défilement de la page.</p>
+                    <div class="boutons_projets">
+                        <button class="bouton ouvrir_modale">En savoir plus</button>
+                        <a href="projets/bts/index.html" class="bouton" target="_blank">Voir le site<span class="visually-hidden">&nbsp;-&nbsp;Cet hyperlien s'ouvrira dans un nouvel onglet.</span></a>
+                    </div>
+                    <div class="modale">
+                        <div class="modale_contenu">
+                            <button type="button" class="close_modal_button" aria-label="Fermer la modale"><i class="fas fa-times fa-2x" aria-hidden="true"></i></button>
+                            <div class="boite_image">
+                                <img src="assets/img/bts_full.png" alt="Capture d'écran du projet BTS">
+                            </div>
+                            <h4>BTS animé</h4>
+                            <div class="infos_projet">
+                                <div class="colonne_contenu">
+                                    <div>
+                                        <h5>Description</h5>
+                                        <p>Ce projet à été réalisé dans le cadre de mes études à l'automne 2021. L'objectif était de produire une interface Web responsive intégrant des composantes animées au défilement de la page. Pour ce faire, nous devions utiliser la librairie Animate.css et l'extension jQuery Appear.</p>
+                                    </div>
+                                </div>
+                                <div class="colonne_contenu">
+                                    <div>
+                                        <h5>Langages et technos</h5>
+                                        <ul>
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JavaScript</li>
+                                            <li>Animate.css</li>
+                                            <li>jQuery Appear</li>
+                                            <li>RGraph</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boutons_projet_modale">
+                                <a href="https://github.com/sabdelrey/BTS_animated" class="bouton" target="_blank">Voir le code<span class="visually-hidden">&nbsp;-&nbsp;Cet hyperlien s'ouvrira dans un nouvel onglet.</span></a>
+                                <a href="projets/bts/index.html" class="bouton" target="_blank">Voir le site<span class="visually-hidden">&nbsp;-&nbsp;Cet hyperlien s'ouvrira dans un nouvel onglet.</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h4 class="switch">SAO (grille Lego)</h4>
+                    <div class="img_box switch">
+                        <img src="assets/img/sao_1.png" alt="Capture d'écran du site SAO" id="sao_1" aria-hidden="true">
+                        <img src="assets/img/sao_2.png" alt="Capture d'écran du site SAO" id="sao_2" aria-hidden="true">
+                    </div>
+                    <p class="description_projet switch">Microsite responsive d’une page basé sur la grille du site Lego.ca.</p>
+                    <div class="boutons_projets switch">
+                        <button class="bouton ouvrir_modale">En savoir plus</button>
+                        <a href="projets/sao/index.html" class="bouton" target="_blank">Voir le site<span class="visually-hidden">&nbsp;-&nbsp;Cet hyperlien s'ouvrira dans un nouvel onglet.</span></a>
+                    </div>
+                    <div class="modale">
+                        <div class="modale_contenu">
+                            <button type="button" class="close_modal_button" aria-label="Fermer la modale"><i class="fas fa-times fa-2x" aria-hidden="true"></i></button>
+                            <div class="boite_image">
+                                <img src="assets/img/sao_full.png" alt="Capture d'écran du projet SAO">
+                            </div>
+                            <h4>SAO (grille Lego)</h4>
+                            <div class="infos_projet">
+                                <div class="colonne_contenu">
+                                    <div>
+                                        <h5>Description</h5>
+                                        <p>Ce projet a été réalisé durant mes études à l'automne 2021. L'objectif était de reproduire la mise en page du site Lego.ca à l’aide d’une grille flexible et d’une architecture HTML5 professionnelle. Pour ce faire, il fallait créer des maquettes filaires (vous pouvez les consulter <a href="https://www.figma.com/proto/jstvwmwe5usErBKLiRD5GB/Maquettes-Lego.ca?page-id=0%3A1&node-id=2%3A2&viewport=241%2C48%2C0.31&scaling=min-zoom" target="_blank" title="Lien vers les maquettes Figma">ici</a>), construire notre projet avec NPM et Gulp, ainsi qu'utiliser SASS pour les styles.</p>
+                                    </div>
+                                </div>
+                                <div class="colonne_contenu">
+                                    <div>
+                                        <h5>Langages et technos</h5>
+                                        <ul>
+                                            <li>HTML5</li>
+                                            <li>Sass</li>
+                                            <li>JavaScript</li>
+                                            <li>Gulp</li>
+                                            <li>Figma (maquettes)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boutons_projet_modale">
+                                <a href="https://github.com/sabdelrey/SAO_lego" class="bouton" target="_blank">Voir le code<span class="visually-hidden">&nbsp;-&nbsp;Cet hyperlien s'ouvrira dans un nouvel onglet.</span></a>
+                                <a href="projets/sao/index.html" class="bouton" target="_blank">Voir le site<span class="visually-hidden">&nbsp;-&nbsp;Cet hyperlien s'ouvrira dans un nouvel onglet.</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h4>Site multipages</h4>
+                    <div class="img_box">
+                        <img src="assets/img/multipages_1.png" alt="Capture d'écran du site multipages" aria-hidden="true">
+                        <img src="assets/img/multipages_2.png" alt="Capture d'écran du site multipages" id="multi_2" aria-hidden="true">
+                    </div>
+                    <p class="description_projet">Site responsive multipages affichant des mises en pages variées.</p>
+                    <div class="boutons_projets">
+                        <button class="bouton ouvrir_modale">En savoir plus</button>
+                        <a href="projets/multipages/index.html" class="bouton" target="_blank">Voir le site<span class="visually-hidden">&nbsp;-&nbsp;Cet hyperlien s'ouvrira dans un nouvel onglet.</span></a>
+                    </div>
+                    <div class="modale">
+                        <div class="modale_contenu">
+                            <button type="button" class="close_modal_button" aria-label="Fermer la modale"><i class="fas fa-times fa-2x" aria-hidden="true"></i></button>
+                            <div class="boite_image">
+                                <img src="assets/img/multipages_full.png" alt="Capture d'écran du projet multipages">
+                            </div>
+                            <h4>Site multipages</h4>
+                            <div class="infos_projet">
+                                <div class="colonne_contenu">
+                                    <div>
+                                        <h5>Description</h5>
+                                        <p>Ce projet a été réalisé dans le cadre de mes études à l'automne 2021. L'objectif était de produire un site Web responsive contenant plusieurs pages présentant une mise en page variée et cohérente à l'aide de CSS grid. Il fallait aussi utiliser jQuery et une librairie de type lightbox.</p>
+                                    </div>
+                                </div>
+                                <div class="colonne_contenu">
+                                    <div>
+                                        <h5>Langages et technos</h5>
+                                        <ul>
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JavaScript</li>
+                                            <li>JQuery</li>
+                                            <li>Lity (lightbox)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boutons_projet_modale">
+                                <a href="https://github.com/sabdelrey/site_multipages" class="bouton" target="_blank">Voir le code<span class="visually-hidden">&nbsp;-&nbsp;Cet hyperlien s'ouvrira dans un nouvel onglet.</span></a>
+                                <a href="projets/multipages/index.html" class="bouton" target="_blank">Voir le site<span class="visually-hidden">&nbsp;-&nbsp;Cet hyperlien s'ouvrira dans un nouvel onglet.</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h4 class="switch">CSS3 de A à Z</h4>
+                    <div class="img_box switch">
+                        <img src="assets/img/css3_1.png" alt="Capture d'écran du site CSS3" id="css3_1" aria-hidden="true">
+                        <img src="assets/img/css3_2.png" alt="Capture d'écran du site CSS2" id="css3_2" aria-hidden="true">
+                    </div>
+                    <p class="description_projet switch">Microsite responsive d’une page présentant une liste de propriétés introduites avec CSS3.</p>
+                    <div class="boutons_projets switch">
+                        <button class="bouton ouvrir_modale">En savoir plus</button>
+                        <a href="projets/css3/index.html" class="bouton" target="_blank">Voir le site<span class="visually-hidden">&nbsp;-&nbsp;Cet hyperlien s'ouvrira dans un nouvel onglet.</span></a>
+                    </div>
+                    <div class="modale">
+                        <div class="modale_contenu">
+                            <button type="button" class="close_modal_button" aria-label="Fermer la modale"><i class="fas fa-times fa-2x" aria-hidden="true"></i></button>
+                            <div class="boite_image">
+                                <img src="assets/img/css3_full.png" alt="Capture d'écran du projet CSS3">
+                            </div>
+                            <h4>CSS3 de A à Z</h4>
+                            <div class="infos_projet">
+                                <div class="colonne_contenu">
+                                    <div>
+                                        <h5>Description</h5>
+                                        <p>Ce projet a été réalisé durant mes études à l'été 2021. Le but était de produire une page Web responsive présentant une liste de propriétés introduites avec CSS3. La navigation devait permettre de naviguer selon les lettres en ordre alphabétique et chaque propriété devait contenir un exemple concret ainsi que le code CSS correspondant.</p>
+                                    </div>
+                                </div>
+                                <div class="colonne_contenu">
+                                    <div>
+                                        <h5>Langages et technos</h5>
+                                        <ul>
+                                            <li>HTML5</li>
+                                            <li>CSS3</li>
+                                            <li>JavaScript</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="boutons_projet_modale">
+                                <a href="https://github.com/sabdelrey/CSS3_properties" class="bouton" target="_blank">Voir le code<span class="visually-hidden">&nbsp;-&nbsp;Cet hyperlien s'ouvrira dans un nouvel onglet.</span></a>
+                                <a href="projets/css3/index.html" class="bouton" target="_blank">Voir le site<span class="visually-hidden">&nbsp;-&nbsp;Cet hyperlien s'ouvrira dans un nouvel onglet.</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="competences_wrapper">
+            <h3 class="visually-hidden">Compétences</h3>
+            <nav class="nav_secondaire_competences" aria-label="Navigation secondaire">
+                <ul>
+                    <li class="invisible"><a href="#a_propos_wrapper">À propos</a></li>
+                    <li class="invisible"><a href="#projets_wrapper">Projets</a></li>
+                    <li><a href="javascript:;" class="lien-actif">Compétences</a></li>
+                    <li class="invisible"><a href="#contact_wrapper">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="competences" class="card">
+                <ul>
+                    <li>
+                        <i class="fab fa-html5 fa-lg" aria-hidden="true"></i>
+                        <p>HTML5</p> 
+                        <img src="assets/img/crochet.svg" alt="Case cochée" aria-hidden="true">
+                    </li>
+                    <li>
+                        <i class="fab fa-css3-alt fa-lg" aria-hidden="true"></i>
+                        <p>CSS3</p> 
+                        <img src="assets/img/crochet.svg" alt="Case cochée" aria-hidden="true">
+                    </li>
+                    <li>
+                        <i class="fab fa-js fa-lg" aria-hidden="true"></i>
+                        <p>JavaScript</p> 
+                        <img src="assets/img/crochet.svg" alt="Case cochée" aria-hidden="true">
+                    </li>
+                    <li>
+                        <img src="assets/img/ts_icon.svg" alt="Icône Illustrator" aria-hidden="true">
+                        <p>TypeScript</p> 
+                        <img src="assets/img/crochet.svg" alt="Case cochée" aria-hidden="true">
+                    </li>
+                    <li>
+                        <i class="fab fa-vuejs fa-lg" aria-hidden="true"></i>
+                        <p>Vue.js</p> 
+                        <img src="assets/img/crochet.svg" alt="Case cochée" aria-hidden="true">
+                    </li>
+                    <li>
+                        <i class="fab fa-php fa-lg" aria-hidden="true"></i>
+                        <p>PHP</p> 
+                        <img src="assets/img/crochet.svg" alt="Case cochée" aria-hidden="true">
+                    </li>
+                    <li>
+                        <i class="fab fa-sass fa-lg" aria-hidden="true"></i>
+                        <p>Sass</p> 
+                        <img src="assets/img/crochet.svg" alt="Case cochée" aria-hidden="true">
+                    </li>
+                    <li>
+                        <i class="fab fa-npm fa-lg" aria-hidden="true"></i>
+                        <p>NPM</p> 
+                        <img src="assets/img/crochet.svg" alt="Case cochée" aria-hidden="true">
+                    </li>
+                    <li>
+                        <i class="fab fa-yarn fa-lg" aria-hidden="true"></i>
+                        <p>Yarn</p> 
+                        <img src="assets/img/crochet.svg" alt="Case cochée" aria-hidden="true">
+                    </li>
+                    <li>
+                        <i class="fab fa-git-alt fa-lg" aria-hidden="true"></i>
+                        <p>Git</p> 
+                        <img src="assets/img/crochet.svg" alt="Case cochée" aria-hidden="true">
+                    </li>
+                    <li>
+                        <i class="fab fa-figma fa-lg" aria-hidden="true"></i>
+                        <p>Figma</p> 
+                        <img src="assets/img/crochet.svg" alt="Case cochée" aria-hidden="true">
+                    </li>
+                    <li>
+                        <img src="assets/img/illustrator_icon.svg" alt="Icône Illustrator" aria-hidden="true">
+                        <p>Illustrator</p> 
+                        <img src="assets/img/crochet.svg" alt="Case cochée" aria-hidden="true">
+                    </li>
+                    <li>
+                        <img src="assets/img/ae_icon.svg" alt="Icône After Effects" aria-hidden="true">
+                        <p>After Effects</p> 
+                        <img src="assets/img/crochet.svg" alt="Case cochée" aria-hidden="true">
+                    </li>
+                    <li>
+                        <img src="assets/img/animate_icon.svg" alt="Icône Animate" aria-hidden="true">
+                        <p>Animate</p> 
+                        <img src="assets/img/crochet.svg" alt="Case cochée" aria-hidden="true">
+                    </li>
+                    <li>
+                        <img src="assets/img/photoshop_icon.svg" alt="Icône Photoshop" aria-hidden="true">
+                        <p>Photoshop</p> 
+                        <img src="assets/img/crochet.svg" alt="Case cochée" aria-hidden="true">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact_wrapper">
+            <h3 class="visually-hidden">Contact</h3>
+            <nav class="nav_secondaire_contact" aria-label="Navigation secondaire">
+                <ul>
+                    <li class="invisible"><a href="#a_propos_wrapper">À propos</a></li>
+                    <li class="invisible"><a href="#projets_wrapper">Projets</a></li>
+                    <li class="invisible"><a href="#competences_wrapper">Compétences</a></li>
+                    <li><a href="javascript:;" class="lien-actif">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="contact" class="card">
+                <div class="boite_image">
+                    <img id="courriel_img" src="assets/img/courriel.png" alt="Dessin d'un courriel" aria-hidden="true">
+                    <p class="contact_msg">Venez me jaser :)</p>
+                    <img id="ballon_img" src="assets/img/ballon.png" alt="Dessin d'un ballon avec un sourire" aria-hidden="true">
+                </div>
+                <div class="boite_texte">
+                    <p>Je suis toujours ouverte aux opportunités, donc n’hésitez pas à m'envoyer un courriel.</p>
+                    <a class="bouton" href="mailto:sabrina-sylvestre@hotmail.com">Écrivez-moi</a>
+                </div>
+            </div>
+        </section> 
+    </main>
+    <footer>
+        <p>&copy; Sabrina Sylvestre | 2022</p>
+    </footer>
+    <script type="module" src="assets/scripts/vendors/main.js"></script>
+</body>
+</html>

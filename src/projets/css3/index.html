@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Comfortaa:wght@300;400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1><span>CSS3</span> de <span>A</span> à <span>Z</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#a">A</a></li>
+                <li><a href="#b">B</a></li>
+                <li><a href="#c">C</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">D</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">E</a></li>
+                <li><a href="#f">F</a></li>
+                <li><a href="#g">G</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">H</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">I</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">J</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">K</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">L</a></li>
+                <li><a href="#m">M</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">N</a></li>
+                <li><a href="#o">O</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">P</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">Q</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">R</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">S</a></li>
+                <li><a href="#t">T</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">U</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">V</a></li>
+                <li><a href="#w">W</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">X</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">Y</a></li>
+                <li class="ancre_inactive"><a href="javascript:;" tabindex="-1">Z</a></li>   
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="a">
+            <h2>A comme...</h2>
+            <div>
+                <h3>Alpha</h3>
+                <div class="alpha">
+                    <div>
+                        <pre><code>
+background-color: rgba(148, 129, 253, 0.2);
+border: 3px solid rgb(148, 129, 253);
+                        </code></pre>
+                    </div>
+                    <div>
+                        <pre><code>
+background-color: hsla(110, 97%, 74%, 0.2);
+border: 3px solid hsl(110, 97%, 74%);
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h3>Animation</h3>
+                <div class="animation_texte">
+                    <div></div>
+                </div>
+                <div class="code_box">
+                    <pre><code>
+.animation_texte div {
+    animation: animation 4s ease-in-out infinite alternate;
+    background-color: #9bf6ff; 
+    position: relative;
+    height: 80px;
+    width: 80px;
+}
+
+@keyframes animation {
+    0% {
+        background-color: #9bf6ff;
+        left: 0;
+    }
+    50% {
+        background-color: #ffc6ff;
+    }
+    100% {
+        background-color: #ffd6a5;
+        border-radius: 50%;
+        left: 85%;
+        transform: rotate(360deg);
+    }
+}
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+        <section id="b">
+            <h2>B comme ...</h2>
+            <div>
+                <h3>Background</h3>
+                <div class="background">
+                    <p>Hello!</p>
+                </div>
+                <div class="code_box">
+                    <pre><code>
+.background {
+    background-blend-mode: hard-light;
+    background-image: url(assets/img/cercle.png), 
+                                           url(assets/img/feuilles.jpg);
+    background-position: center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+}
+                    </code></pre>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h3>Border</h3>
+                <div class="border">
+                    <p><code>border: 5px dotted #ffc6ff;</code></p>
+                    <p><code>border: 3px dashed #ffd6a5;</code></p>
+                    <p><code>border: 3px solid #caffbf; / border-radius: 8px;</code></p>
+                    <p><code>border: 5px double #bdb2ff;</code></p>
+                    <p><code>border: 4px groove #fdffb6;</code></p>
+                    <p><code>border: 4px ridge #fdffb6;</code></p>
+                    <p><code>border: 3px inset #9bf6ff;</code></p>
+                    <p><code>border: 3px outset #9bf6ff;</code></p>
+                </div>
+            </div>
+        </section>
+        <section id="c">
+            <h2>C comme...</h2>
+            <div>
+                <h3>Columns</h3>
+                <div class="columns">
+                    <p>Cupcake ipsum dolor sit amet toffee sweet roll. Candy canes dessert gingerbread. Caramels dessert sweet roll donut pudding tiramisu chocolate cake cookie jelly-o. Marzipan icing jelly beans. Ice cream chocolate candy canes cake gingerbread marzipan wafer. Macaroon icing halvah. Wafer biscuit danish sweet roll jujubes soufflé liquorice. Marzipan danish cotton candy jelly-o gingerbread dessert tiramisu.</p>
+                    <p>Cake muffin jujubes jujubes fruitcake toffee cake candy. Liquorice cookie liquorice icing. Biscuit croissant carrot cake wafer biscuit biscuit. Brownie gingerbread jelly beans. Donut gummies halvah. Oat cake caramels candy canes cotton candy pudding jelly beans jelly-o. Caramels cake cookie dessert lollipop. Jelly-o macaroon biscuit topping apple pie lollipop dragée icing. Jujubes cake pie chupa chups caramels sweet caramels. Brownie chocolate bar marshmallow fruitcake bear claw jujubes gummies.</p>
+                    <p>Sugar plum donut powder jelly beans. Lollipop lollipop ice cream dessert jelly croissant. Topping cheesecake jelly beans tootsie roll. Cupcake pie cupcake jelly-o. Tiramisu icing apple pie sweet croissant gummies cake tootsie roll dragée. Marshmallow sweet cake gingerbread cake bonbon sweet.</p>
+                    <p>Bonbon tiramisu danish chupa chups brownie tart oat cake muffin cotton candy. Soufflé chocolate bar gummi bears gummies macaroon. Fruitcake fruitcake icing cotton candy pie fruitcake donut. Cake oat cake cake dessert. Tart jelly-o apple pie sugar plum marzipan halvah oat cake muffin jelly beans. Bonbon apple pie dessert jelly-o muffin. Oat cake lollipop danish liquorice icing chupa chups macaroon cake.</p>
+                </div>
+                <div class="code_box">
+                    <pre><code>
+.columns {
+    column-count: 2;
+    column-gap: 25px;
+    column-rule: 4px dotted #ffd6a5;
+}
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+        <section id="f">
+            <h2>F comme...</h2>
+            <div>
+                <h3>Filter</h3>
+                <div class="images_filters">
+                    <figure>
+                        <figcaption>Blur</figcaption>
+                        <img class="blur_img" src="assets/img/perruche.jpg" alt="Perruche blanche devant un fond vert lime avec un effet de flou">
+                        <p><code>filter: blur(2px);</code></p>
+                    </figure>
+                    <figure>
+                        <figcaption>Brightness</figcaption>
+                        <img class="brightness_img" src="assets/img/perruche.jpg" alt="Perruche blanche devant un fond vert lime avec une luminosité faible">
+                        <p><code>filter: brightness(50%);</code></p>
+                    </figure>
+                    <figure>
+                        <figcaption>Contrast</figcaption>
+                        <img class="contrast_img" src="assets/img/perruche.jpg" alt="Perruche blanche devant un fond vert lime avec peu de contraste de couleur">
+                        <p><code>filter: contrast(60%);</code></p>
+                    </figure>
+                    <figure>
+                        <figcaption>Drop-shadow</figcaption>
+                        <img class="drop-shadow_img" src="assets/img/perruche.jpg" alt="Perruche blanche devant un fond vert lime avec une ombre portée de couleur rose">
+                        <p><code>filter: drop-shadow(3px 3px 0 #ff499e);</code></p>
+                    </figure>
+                    <figure>
+                        <figcaption>Grayscale</figcaption>
+                        <img class="grayscale_img" src="assets/img/perruche.jpg" alt="Perruche en noir et blanc">
+                        <p><code>filter: grayscale(100%);</code></p>
+                    </figure>
+                    <figure>
+                        <figcaption>Hue-rotate</figcaption>
+                        <img class="hue-rotate_img" src="assets/img/perruche.jpg" alt="Perruche blanche devant un fond orange">
+                        <p><code>filter: hue-rotate(-60deg);</code></p>
+                    </figure>
+                    <figure>
+                        <figcaption>Invert</figcaption>
+                        <img class="invert_img" src="assets/img/perruche.jpg" alt="Perruche noire devant un fond mauve">
+                        <p><code>filter: invert(100%);</code></p>
+                    </figure>
+                    <figure>
+                        <figcaption>Opacity</figcaption>
+                        <img class="opacity_img" src="assets/img/perruche.jpg" alt="Perruche blanche devant un fond vert lime avec transparence">
+                        <p><code>filter: opacity(40%);</code></p>
+                    </figure>
+                    <figure>
+                        <figcaption>Sepia</figcaption>
+                        <img class="sepia_img" src="assets/img/perruche.jpg" alt="Perruche blanche devant un fond beige">
+                        <p><code>filter: sepia(90%);</code></p>
+                    </figure>
+                    <figure>
+                        <figcaption>Saturate</figcaption>
+                        <img class="saturate_img" src="assets/img/perruche.jpg" alt="Perruche blanche devant un fond vert lime très saturé">
+                        <p><code>filter: saturate(250%);</code></p>
+                    </figure>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h3>Flex</h3>
+                <div class="contenant_flex">
+                    <div class="cercle_1">1</div>
+                    <div class="cercle_2">2</div>
+                    <div class="cercle_3">3</div>
+                    <div class="cercle_4">4</div>
+                    <div class="cercle_5">5</div>
+                </div>
+                <div class="code_box">
+                    <pre><code>
+.contenant_flex {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+}
+
+.cercle_1 {
+order: 3;
+}
+
+.cercle_2 {
+order: 4;
+}
+
+.cercle_3 {
+order: 1;
+}
+
+.cercle_4 {
+align-self: flex-end;
+order: 5;
+}
+
+.cercle_5 {
+align-self: flex-start;
+order: 2;
+}
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+        <section id="g">
+            <h2>G comme...</h2>
+            <div>
+                <h3>Gradient</h3>
+                <div class="gradient">
+                    <p><code>background: linear-gradient(to right, #ffd6a5 0%, #fdffb6 20%, #caffbf 40%, #9bf6ff 60%, #bdb2ff 80%, #ffc6ff 100%);</code></p>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h3>Grid</h3>
+                <div class="contenant_grid">
+                    <div class="carre_a">A</div>
+                    <div class="carre_b">B</div>
+                    <div class="carre_c">C</div>
+                    <div class="carre_d">D</div>
+                </div>
+                <div class="code_box">
+                    <pre><code>
+.contenant_grid {
+display: grid;
+grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+}
+                        
+.carre_a {
+grid-area: 4 / 1 / 5 / 4;
+}
+
+.carre_b {
+grid-area: 3 / 1 / 4 / 2;
+}
+
+.carre_c {
+grid-area: 1 / 1 / 3 / 3;
+}
+
+.carre_d {
+grid-area: 2 / 3 / 4 / 4;
+}
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+        <section id="m">
+            <h2>M comme...</h2>
+            <div>
+                <h3>Media queries</h3>
+                <div class="media_queries">
+                    <p>Je change de couleur à partir de 1024px</p>
+                </div>
+                <div class="code_box">
+                    <pre><code>
+@media only screen and (min-width: 1024px) {
+    .media_queries {
+    background-color: #9bf6ff;
+    }
+}                        
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+        <section id="o">
+            <h2>O comme...</h2>
+            <div>
+                <h3>Overflow</h3>
+                <div class="contenant_overflow" tabindex="0" aria-label="Image avec barres de défilement" role="region">
+                    <img class="overflow_img" src="assets/img/chat.jpg" alt="Photo en contre-plongée d'un chat rayé couché sur le bout d'une table et qui regarde vers le bas">
+                </div>
+                <div class="code_box">
+                    <pre><code>
+.contenant_overflow {
+    overflow: auto;
+    height: 250px;
+    width: 450px;
+}
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+        <section id="t">
+            <h2>T comme...</h2>
+            <div>
+                <h3>Text-decoration</h3>
+                <div class="text_deco code">
+                    <p><code>text-decoration: 2px solid line-through #ffc6ff;</code></p>
+                    <p><code>text-decoration: 2px wavy underline #9bf6ff;</code></p>
+                    <p><code>text-decoration: 2px double underline #caffbf;</code></p>
+                    <p><code>text-decoration: 4px dotted underline #ffd6a5;</code></p>
+                    <p><code>text-decoration: 2px dashed overline #bdb2ff;</code></p>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h3>Text-shadow</h3>
+                <div class="shadow">
+                    <p><code>text-shadow: 3px 3px 2px #9bf6ff;</code></p>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h3>Transform</h3>
+                <div class="transform">
+                    <div class="losange"></div>
+                    <div class="parallelogramme"></div>
+                    <div class="etoile"></div>
+                    <div class="plus"></div>
+                    <div class="coeur"></div>
+                    <div class="goutte"></div>
+                </div>
+                <div class="code_box">
+                    <div class="accordeon">
+                        <h4><button class="btn_accordeon" aria-expanded="false" aria-controls="section_losange" id="accordeon_losange">Losange&nbsp;<span aria-hidden="true">&#9660;</span></button></h4>
+                        <div class="transform_code" id="section_losange" role="region" aria-labelledby="accordeon_losange">
+                            <pre><code>
+.losange {
+    background-color: #ffd6a5;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    height: 80px;
+    width: 80px;
+    transform: rotate(45deg);
+}
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="accordeon">
+                        <h4><button class="btn_accordeon" aria-expanded="false" aria-controls="section_parallelogramme" id="accordeon_parallelogramme">Parallélogramme&nbsp;<span aria-hidden="true">&#9660;</span></button></h4>
+                        <div class="transform_code" id="section_parallelogramme" role="region" aria-labelledby="accordeon_parallelogramme">
+                            <pre><code>
+.parallelogramme {
+    background-color: #fdffb6;
+    position: absolute;
+    left: 190px;
+    top: 35px;
+    height: 80px;
+    width: 100px;
+    transform: skew(20deg);
+}
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="accordeon">
+                        <h4><button class="btn_accordeon" aria-expanded="false" aria-controls="section_etoile" id="accordeon_etoile">Étoile&nbsp;<span aria-hidden="true">&#9660;</span></button></h4>
+                        <div class="transform_code" id="section_etoile" role="region" aria-labelledby="accordeon_etoile">
+                            <pre><code>
+.etoile {
+    background-color: #caffbf;
+    position: absolute;
+    left: 360px;
+    top: 35px;
+    height: 80px;
+    width: 80px;
+}
+    
+.etoile:before,
+.etoile:after {
+    background-color: #caffbf;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 80px;
+    width: 80px;
+}
+    
+.etoile:before {
+    transform: rotate(60deg);
+}
+    
+.etoile:after {
+    transform: rotate(30deg);
+}                                
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="accordeon">
+                        <h4><button class="btn_accordeon" aria-expanded="false" aria-controls="section_plus" id="accordeon_plus">Plus&nbsp;<span aria-hidden="true">&#9660;</span></button></h4>
+                        <div class="transform_code" id="section_plus" role="region" aria-labelledby="accordeon_plus">
+                            <pre><code>
+.plus {
+    background-color: #bdb2ff;
+    position: absolute;
+    left: 60px;
+    top: 160px;
+    height: 100px;
+    width: 30px;
+}
+    
+.plus:before {
+    background-color: #bdb2ff;
+    content: '';
+    position: absolute;
+    right: -115%;
+    top: 50%;
+    height: 30px;
+    width: 100px;
+    transform: translateY(-50%);
+}
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="accordeon">
+                        <h4><button class="btn_accordeon" aria-expanded="false" aria-controls="section_coeur" id="accordeon_coeur">Coeur&nbsp;<span aria-hidden="true">&#9660;</span></button></h4>
+                        <div class="transform_code" id="section_coeur" role="region" aria-labelledby="accordeon_coeur">
+                            <pre><code>
+.coeur {
+    background-color: #ffc6ff;
+    position: absolute;
+    left: 210px;
+    top: 185px;
+    height: 65px;
+    width: 65px;
+    transform: rotate(-45deg);
+}
+
+.coeur:before,
+.coeur:after {
+    background-color: #ffc6ff;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    height: 65px;
+    width: 65px;
+}
+
+.coeur:after {
+    left: 0;
+    top: -35px;
+}
+
+.coeur:before {
+    left: 35px;
+    top: 0;
+}
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="accordeon">
+                        <h4><button class="btn_accordeon" aria-expanded="false" aria-controls="section_goutte" id="accordeon_goutte">Goutte d'eau&nbsp;<span aria-hidden="true">&#9660;</span></button></h4>
+                        <div class="transform_code" id="section_goutte" role="region" aria-labelledby="accordeon_goutte">
+                            <pre><code>
+.goutte {
+    background-color: #9bf6ff;
+    border-radius: 50%;
+    position: absolute;
+    left: 360px;
+    top: 185px;
+    height: 80px;
+    width: 80px;
+}
+    
+.goutte:before {
+    border: 32px solid transparent;
+    border-bottom: 44px solid #9bf6ff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -60px;
+    transform: translateX(-50%);
+}
+                            </code></pre>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h3>Transition</h3>
+                <div class="transition">
+                    <div>
+                        <p>Survole-moi <span aria-hidden="true">&#10032;</span></p>
+                    </div>
+                </div>
+                <div class="code_box">
+                    <pre><code>
+.transition div {
+    border: 3px solid #ffd6a5;
+    background-color: #fdffb6;
+    height: 100px;
+    width: 250px;
+    transition: all 0.5s;
+}
+
+.transition div:hover {
+    box-shadow: 0 0 5px 8px#ffd6a5 inset;
+    height: 150px;
+    width: 300px;
+    font-size: 1.7rem;
+}
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+        <section id="w">
+            <h2>W comme...</h2>
+            <div>
+                <h3>Word-wrap</h3>
+                <div class="word_wrap">
+                    <p>Le mot anticonstitutionnellement est composé de 25 lettres.</p>
+                </div>
+                <div class="code_box">
+                    <pre><code>
+.word_wrap {
+    width: 150px;
+    word-wrap: break-word;
+}
+                    </code></pre>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside>
+        <button type="button" class="btn_retour" aria-label="Retour en haut">&#9947;</button>
+    </aside>
+    <footer>Sabrina Sylvestre&#8199;&#8211;&#8199;<time datetime="2021-07-16">16 juillet 2021</time></footer>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

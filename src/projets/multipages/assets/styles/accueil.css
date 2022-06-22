@@ -1,0 +1,90 @@
+@import 'styles.css';
+
+div[class^="boite"] {
+    display: none;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.video a:focus {
+    outline: 2px solid #f3322a;
+}
+
+button.lity-close:focus {
+    color:#f3322a;
+}
+
+.source {
+    padding-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+
+    div[class^="boite"] {
+        display: block;
+    }
+
+    h2 {
+        grid-row: 2 / 3;
+    }
+    
+    .image {
+        grid-column: 4 / 13;
+    }
+
+    .video {
+        grid-column: 1 / 10;
+    }
+
+    .boite_a {
+        background-color: #81c3d8;
+        grid-column: 1 / 4;
+    }
+
+    .boite_b {
+        background-color: #13378c;
+        grid-column: 10 / 13;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .image {
+        grid-column: 7 / 13;
+    }
+
+    .video {
+        grid-column: 1 / 8;
+    }
+
+    .boite_a {
+        grid-column: 1 / 7;
+    }
+
+    .boite_b {
+        grid-column: 8 / 13;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .image {
+        grid-column: 8 / 13;
+    }
+
+    .video {
+        grid-column: 1 / 6;
+    }
+
+    .boite_a {
+        grid-column: 1 / 8;
+    }
+
+    .boite_b {
+        grid-column: 6 / 13;
+    }
+}

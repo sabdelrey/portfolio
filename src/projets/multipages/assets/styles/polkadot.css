@@ -1,0 +1,33 @@
+@import 'styles.css';
+
+div[class^="boite"] {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    div[class^="boite"] {
+        background-color: #0296df;
+        display: block;
+    }
+
+    .boite_a {
+        grid-column: 1 / 4;
+        grid-row: 2 / 4;
+    }
+
+    .image {
+        grid-column: 4 / 10;
+        grid-row: 3 / 4;
+    }
+
+    p {
+        grid-column: 4 / 10;
+        grid-row: 2 / 3;
+    }
+
+    .boite_b {
+        grid-column: 10 / 13;
+        grid-row: 2 / 4;
+    }
+}

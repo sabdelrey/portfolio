@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dfe7fd;
+    color: #343a40;
+    font-family: 'Comfortaa', cursive;
+}
+
+header img {
+    margin-bottom: 10px;
+    opacity: 0.4;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20vw;
+    opacity: 1;
+    position: absolute;
+    top: 13vw;
+    text-align: center;
+    text-shadow: -1px -1px 0 #a6c1ee,  
+                  1px -1px 0 #ffd1ff,
+                 -1px 1px 0 #f9ceb5,
+                  1px 1px 0 #ffd1ff;
+    width: 100%;
+    z-index: 1;
+}
+
+h2 {
+    font-family: 'Sniglet', cursive;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    padding-top: 30px;
+    text-align: center;
+}
+
+main {
+    margin: 2.5vw;
+}
+
+main p {
+    text-align: justify;
+}
+
+section, aside {
+    margin-bottom: 40px;
+}
+
+ul li, ol li {
+    list-style-type: none;
+}
+
+ol li {
+    padding: 3px 0;
+}
+
+ol li::before {
+    color: #a6c1ee;
+    content: "\2605\00a0";
+}
+
+abbr {
+    text-decoration: 2px dotted underline #a06cd5;
+}
+
+a {
+    color:#343a40;
+    text-decoration: underline #a06cd5;
+}
+
+a:hover, a:focus, a:active {
+    color:#a06cd5;
+    text-decoration: underline overline #a06cd5;
+    outline: none;
+}
+
+.fa-angellist, .fa-heart {
+    color: #a06cd5;
+}
+
+.source {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+#logoCanvas {
+    display: block;
+    margin: 20px auto;
+}
+
+.video {
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 */
+    position: relative;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+figure {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px #a6c1ee;
+    padding: 10px;
+    margin: 0 auto 20px;
+    width: 80%;
+}
+
+img {
+    width: 100%;
+}
+
+.member_picture {
+    border-radius: 15px;
+}
+
+figcaption {
+    padding-top: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+footer {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Animations */
+
+.animate__double {
+    animation: fadeIn 2s,
+               pulse 2s 2;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+
+    figure {
+        width: 60%;
+    }  
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 20px;
+    }
+
+    main {
+        display: grid;
+        grid-gap: 40px;
+    }
+
+    section, aside {
+        margin-bottom: 0;
+    }
+
+    #logoCanvas {
+        margin: 40px auto;
+    }
+
+    figure {
+        width: 80%;
+    }
+
+    .member_picture {
+        max-width: 450px;
+    }
+
+    .le_groupe {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .les_tournees {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .les_membres {
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+    }
+
+    .video {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    footer {
+        margin: 40px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 25px;
+    }
+
+    h3 {
+        padding-top: 50px;
+    }
+
+    .member_picture {
+        max-width: 500px;
+    }
+}

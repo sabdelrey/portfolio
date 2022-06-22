@@ -1,0 +1,33 @@
+@import 'styles.css';
+
+.boite {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .image {
+        grid-column: 1 / 7;
+    }
+
+    p {
+        grid-column: 7 / 13;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    
+    .image {
+        grid-column: 1 / 6;
+    }
+
+    p {
+        grid-column: 6 / 11;
+    }
+
+    .boite {
+        background-color: #fca301;
+        display: block;
+        grid-column: 11 / 13;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Sniglet&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="animate__animated animate__slideInLeft animate__fast animate__delay-1s">BTS</h1>
+        <img class="animate__animated animate__slideInDown" src="assets/img/bts.jpg" alt="Groupe de K-pop BTS">
+    </header>
+    <main>
+        <section>
+            <h2 class="animate__animated invisible" data-animation="bounceInDown"><i class="fab fa-angellist animate__animated animate__slow animate__repeat-2" data-animation="wobble"></i> Le groupe</h2>
+            <p class="animate__animated invisible" data-animation="fadeInUp" data-delay="1000"><a href="https://fr.wikipedia.org/wiki/BTS_(groupe)" title="BTS - Wikipédia" target="_blank">BTS</a> est un groupe de K-pop de la Corée du Sud composé de sept membres. Le groupe a marqué le monde de la musique avec sa percée fulgurante sur le marché international, fracassant plusieurs records sur leur passage. Les membres ont d'ailleurs reçu l'<a href="https://en.wikipedia.org/wiki/Order_of_Cultural_Merit_(South_Korea)" title="Définition - Wikipédia" target="_blank"><i lang="en">Order of Cultural Merit</i></a>, décerné par le président de la Corée du Sud, pour leur contribution à la diffusion de la culture et la langue coréenne. Leur musique aborde des thèmes variés, tels que la santé mentale, l'amour de soi et le commentaire social. BTS possède une communauté de <i lang="en" title="admirateurs">fans</i> dévoués, dénommée <abbr title="Adorable Representative MC for Youth">A.R.M.Y</abbr>, comptant plusieurs millions de membres. Ces derniers ont joué un grand rôle dans la popularisation et le succès du groupe. Aujourd'hui, BTS est devenu un phénomème mondial et sont considérés parmis les artistes les plus influents de leur génération.</p>
+            <canvas class="animate__animated invisible" data-animation="double" data-delay="1500" id="logoCanvas" width="365" height="595"></canvas>
+        </section>
+        <section class="les_tournees">
+            <h2 class="animate__animated invisible" data-animation="bounceInDown"><i class="fab fa-angellist animate__animated animate__slow animate__repeat-2" data-animation="wobble"></i> Les tournées</h2>
+            <ol>
+                <li class="animate__animated invisible" data-animation="lightSpeedInRight" data-delay="500">The Red Bullet Tour (2014)</li>
+                <li class="animate__animated invisible" data-animation="lightSpeedInRight" data-delay="1000">Wake Up : Open Your Eyes Japan Tour (2015)</li>
+                <li class="animate__animated invisible" data-animation="lightSpeedInRight" data-delay="1500">The Most Beautiful Moment in Life On Stage Tour (2016)</li>
+                <li class="animate__animated invisible" data-animation="lightSpeedInRight" data-delay="2000">The Wings Tour (2017)</li>
+                <li class="animate__animated invisible" data-animation="lightSpeedInRight" data-delay="2500">Love Yourself World Tour (2018)</li>
+            </ol>
+            <div class="animate__animated invisible" data-animation="bounceInUp" data-delay="3000">
+                <h3>Évolution du nombre de spectateurs à chaque tournée</h3>
+                <div class="chart-container">
+                    <div id="chart"></div>
+                </div>
+                <p class="source">Source : <a href="https://en.wikipedia.org/wiki/List_of_BTS_live_performances">Wikipédia</a></p>
+            </div>
+        </section>
+        <section class="les_membres">
+            <h2 class="animate__animated invisible" data-animation="bounceInDown"><i class="fab fa-angellist animate__animated animate__slow animate__repeat-2" data-animation="wobble"></i> Les membres</h2>
+            <ul>
+                <li>
+                    <figure class="animate__animated invisible" data-animation="flipInY" data-delay="500">
+                        <img class="member_picture" src="assets/img/member-rm.jpg" alt="BTS member : RM">
+                        <figcaption>RM</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="animate__animated invisible" data-animation="flipInY" data-delay="500">
+                        <img class="member_picture" src="assets/img/member-jin.jpg" alt="BTS member : Jin">
+                        <figcaption>Jin</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="animate__animated invisible" data-animation="flipInY" data-delay="500">
+                        <img class="member_picture" src="assets/img/member-suga.jpg" alt="BTS member : Suga">
+                        <figcaption>Suga</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="animate__animated invisible" data-animation="flipInY" data-delay="500">
+                        <img class="member_picture" src="assets/img/member-jhope.jpg" alt="BTS member : j-hope">
+                        <figcaption>J-Hope</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="animate__animated invisible" data-animation="flipInY" data-delay="500">
+                        <img class="member_picture" src="assets/img/member-jimin.jpg" alt="BTS member : Jimin">
+                        <figcaption>Jimin</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="animate__animated invisible" data-animation="flipInY" data-delay="500">
+                        <img class="member_picture" src="assets/img/member-v.jpg" alt="BTS member : V">
+                        <figcaption>V</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="animate__animated invisible" data-animation="flipInY" data-delay="500">
+                        <img class="member_picture" src="assets/img/member-jk.jpg" alt="BTS member : Jungkook">
+                        <figcaption>Jungkook</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        <aside class="video animate__animated invisible" data-animation="fadeInUp">
+            <iframe src="https://www.youtube.com/embed/9SmQOZWNyWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </aside> 
+    </main>
+    <footer>
+        <p><i class="far fa-heart animate__animated animate__repeat-3" data-animation="heartBeat"></i>&emsp;Sabrina Sylvestre | PMI | 2021&emsp;<i class="far fa-heart animate__animated animate__repeat-3" data-animation="heartBeat"></i></p>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Appear -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.js" integrity="sha512-dPZE9SLz1NVUX9tSX9TYOs2SyaJRBZC9ogOc/VasDFSFrxSDkXv3ZCdgkG8/AzHQ+YVklyqDgSS3aDgMradlNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Rgraph -->
+    <script src="assets/scripts/RGraph.svg.common.core.js"></script>
+    <script src="assets/scripts/RGraph.svg.common.tooltips.js"></script>
+    <script src="assets/scripts/RGraph.svg.common.key.js"></script>
+    <script src="assets/scripts/RGraph.svg.line.js"></script>
+    <!-- Mes scripts -->
+    <script src="assets/scripts/index.js"></script>
+</body>
+</html>

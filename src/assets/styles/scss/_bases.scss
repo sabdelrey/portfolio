@@ -1,0 +1,112 @@
+@use 'variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+
+    @media (prefers-reduced-motion: reduce) {
+        scroll-behavior: auto;
+    }
+
+    @media #{variables.$medium-plus} {
+        font-size: 17px;
+    }
+
+    @media #{variables.$large-plus} {
+        font-size: 18px;
+    }
+
+    @media #{variables.$xlarge-plus} {
+        font-size: 20px;
+    }
+}
+
+body {
+    background-color: variables.$charcoal;
+}
+
+footer {
+    color: variables.$blanc;
+    font-family: variables.$font-text;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+::selection {
+    background-color: #fff;
+}
+
+.bouton {
+    color: variables.$charcoal;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-family: variables.$font-monospace;
+    text-decoration: none;
+    background-color: variables.$blanc;
+    border: none;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+@keyframes cascade {
+    from {
+        opacity: 1;        
+        left: 100vw;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes flechemauve {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(0); }
+    50% { transform: translateY(9px); }
+    75% { transform: translateY(9px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes flecheverte {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(9px); }
+    50% { transform: translateY(20px); }
+    75% { transform: translateY(9px); }
+    100% { transform: translateY(0); }
+}
+
+.nav_principale a, [class^="nav_secondaire"] a, .bouton {
+    &:hover {
+        background-image: url("../../../assets/img/encercler.svg");
+        background-repeat: no-repeat;
+        background-size: 97%;
+        background-position: center;
+    }
+
+    &:focus {
+        outline-offset: -1px;
+    }
+
+    &.lien-actif {
+        background-image: none;
+        cursor: default;
+    }
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
